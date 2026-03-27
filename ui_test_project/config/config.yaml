@@ -1,0 +1,3 @@
+base_url: "https://learnblockchain.cn/"
+selenium_hub: "http://localhost:4444/wd/hub"
+browser: "chromium"

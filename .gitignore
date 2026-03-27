@@ -1,0 +1,16 @@
+.DS_Store
+.idea/
+restful-booker/
+
+**/.idea/
+**/.venv/
+**/.pytest_cache/
+**/node_modules/
+
+**/.env
+**/.env.*
+
+**/__pycache__/
+*.pyc
+.vscode/
+**/.vscode/
