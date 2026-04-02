@@ -1,0 +1,21 @@
+name: API Tests                    # 工作流名称
+
+on: [push]                         # 推代码时触发
+
+jobs:
+  test:
+    runs-on: ubuntu-latest         # 在 Ubuntu 上跑
+
+    services:                      # 启动 Docker 服务
+      restful-booker:
+        image: mwinteringham/restfulbooker:latest
+        ports:
+          - 3001:3001
+
+    steps:
+      - uses: actions/checkout@v4            # 拉代码
+      - uses: actions/setup-python@v5        # 装 Python
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt # 装依赖
+      - run: pytest tests/ -v --alluredir=reports/allure-results  # 跑测试
