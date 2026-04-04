@@ -2,3 +2,5 @@ base_url: "http://localhost:3001"
 ping_path: "/ping"
 time_out: 5
 max_avg_time_ms: 500
+username: "admin"
+password: "password123"

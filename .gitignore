@@ -1,6 +1,8 @@
 .DS_Store
 .idea/
 restful-booker/
+web3_lab/
+generate_resume.py
 
 **/.idea/
 **/.venv/
@@ -14,3 +16,25 @@ restful-booker/
 *.pyc
 .vscode/
 **/.vscode/
+
+# Build artifacts
+**/cache/
+**/out/
+**/artifacts/
+**/typechain-types/
+
+# Reports (generated)
+**/reports/
+**/allure-results/
+
+# Foundry
+foundry_test_project/lib/
+foundry_test_project/.gitmodules
+foundry_test_project/cache/
+foundry_test_project/out/
+
+# Hardhat
+hardhat_test_project/cache/
+hardhat_test_project/artifacts/
+hardhat_test_project/typechain-types/
+hardhat_test_project/ignition/deployments/

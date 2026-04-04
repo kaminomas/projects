@@ -1,0 +1,19 @@
+[
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "totalprice": 122,
+    "depositpaid": 22,
+    "bookingdates": {"checkin": "2026-01-01", "checkout": "2026-01-05"}
+  },
+
+  {
+    "firstname": "云",
+    "lastname": "李",
+    "totalprice": 55,
+    "depositpaid": 23,
+    "bookingdates": {"checkin": "2026-01-02", "checkout": "2026-01-09"}
+  }
+]
+
+
