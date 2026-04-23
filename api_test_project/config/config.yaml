@@ -4,3 +4,5 @@ time_out: 5
 max_avg_time_ms: 500
 username: "admin"
 password: "password123"
+auth_type: "cookie_token"
+password_encrypt_type: "plain"
