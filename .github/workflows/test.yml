@@ -1,24 +1,24 @@
-name: API Tests                    # 工作流名称
+name: API Tests                    # Workflow name
 
-on: [push]                         # 推代码时触发
+on: [push]                         # Trigger on every push
 
 jobs:
   test:
-    runs-on: ubuntu-latest         # 在 Ubuntu 上跑
+    runs-on: ubuntu-latest         # Run on Ubuntu
     defaults:
       run:
         working-directory: api_test_project
 
-    services:                      # 启动 Docker 服务
+    services:                      # Spin up dependent Docker services
       restful-booker:
         image: mwinteringham/restfulbooker:latest
         ports:
           - 3001:3001
 
     steps:
-      - uses: actions/checkout@v4            # 拉代码
-      - uses: actions/setup-python@v5        # 装 Python
+      - uses: actions/checkout@v4            # Check out the repo
+      - uses: actions/setup-python@v5        # Install Python
         with:
           python-version: '3.11'
-      - run: pip install -r requirements.txt # 装依赖
-      - run: pytest tests/ -v --alluredir=reports/allure-results  # 跑测试
+      - run: pip install -r requirements.txt # Install dependencies
+      - run: pytest tests/ -v --alluredir=reports/allure-results  # Run the test suite
