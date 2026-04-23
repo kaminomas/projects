@@ -8,8 +8,8 @@
   },
 
   {
-    "firstname": "云",
-    "lastname": "李",
+    "firstname": "Jane",
+    "lastname": "Smith",
     "totalprice": 55,
     "depositpaid": 23,
     "bookingdates": {"checkin": "2026-01-02", "checkout": "2026-01-09"}
