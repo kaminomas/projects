@@ -37,3 +37,23 @@ hardhat_test_project/cache/
 hardhat_test_project/artifacts/
 hardhat_test_project/typechain-types/
 hardhat_test_project/ignition/deployments/
+
+# Coverage
+**/htmlcov/
+**/.coverage
+**/.coverage.*
+**/coverage/
+**/coverage.xml
+
+# Python packaging
+**/*.egg-info/
+**/dist/
+**/build/
+
+# Foundry broadcast/script output
+**/broadcast/
+**/cache_forge/
+
+# Misc
+*.log
+**/.DS_Store
